@@ -1,0 +1,12 @@
+# fact_report.rosa
+fact color:sky:blue
+fact animal:cat
+fact animal:dog
+
+# print the raw facts set
+print facts
+
+# create counts via Python expressions
+animal_facts := [f for f in facts if f.startswith('animal:')]
+print "animal facts:", animal_facts
+print "num animals:", len(animal_facts)
